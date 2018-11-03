@@ -18,7 +18,7 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <form method="POST" name="sentMessage" id="contactForm" netlify data-netlify="true">
+        <form method="POST" name="sentMessage" id="contactForm" netlify-recaptcha netlify>
           <!-- id="contactForm" 
            {{- if $contact.netlify -}}
              netlify
@@ -80,8 +80,8 @@
                     Message could not be send. Please contact us at {{ (or $contact.email .Site.Params.email) }} instead.
                   {{ end }}
                 </div><br />
-                <!-- {{ with $contact.captcha }} -->
-                  <!-- <div class="g-recaptcha-container">
+                {{ with $contact.captcha }} 
+                  <div class="g-recaptcha-container" data-sitekey="6LfIdngUAAAAAKiBQgu4LtdPOvf10PoTaPsJUF_u>
                     <span class="g-recaptcha-filler"></span> 
                     <button
                       type="submit"
@@ -95,7 +95,7 @@
                     </button>
                     <span class="filler"></span>
                   </div>
-                {{ else }}-->
+                {{ else }}
                 <div data-netlify-recaptcha></div>
                   <button type="submit" value="Submit" class="btn btn-xl">
                     {{ print $contact.buttonText }}
