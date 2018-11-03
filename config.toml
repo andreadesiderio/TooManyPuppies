@@ -310,7 +310,7 @@ googleAnalytics = ""
     # as an example the mailout plugin from caddy.
     # Provide the post URL for the form and depending on the provider
     # add some custom JS script to finish the implementation.
-    postURL = "aadesiderio86@gmail.com"
+    postURL = "https://distracted-ptolemy-3a7ded.netlify.com/"
 
     email = "aadesiderio86@gmail.com"
 
