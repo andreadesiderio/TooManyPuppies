@@ -339,13 +339,14 @@ googleAnalytics = ""
       warning = "Please enter a message."
 
       # Add optional form fields to identify contact forms
-      #[[params.contact.form.hidden]]
-      #  name = "someID"
-      #  value = "example.com"
+      [[params.contact.form.hidden]]
+        name = "sentMessage"
+        value = "submit"
       #
-      #[[params.contact.form.hidden]]
+      [[params.contact.form.hidden]]
       # Special values for name such as "page" and "site" will be autofilled
-      #  name = "page"
+        name = "name"
+        name = "email"
 
   # Footer section
   [params.footer]
