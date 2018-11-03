@@ -84,6 +84,7 @@
                 </div><br />
                 {{ with $contact.captcha }}
                   <div class="g-recaptcha-container">
+                      <div class="g-recaptcha">
                     <span class="g-recaptcha-filler"></span>
                     <button
                       type="submit"
@@ -96,6 +97,7 @@
                       {{ print $contact.buttonText }}
                     </button>
                     <span class="filler"></span>
+                  </div>
                   </div>
                 {{ else }}
                   <button type="submit" value="Submit" class="btn btn-xl">
