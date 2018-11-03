@@ -24,10 +24,7 @@
           id="contactForm" data-netlify= "true"
              netlify
              action="{{- $contact.postURL | default (printf `//formspree.io/%s` (or $contact.email .Site.Params.email)) -}}">
-             <!-- {{- end -}}
-           {{- else -}} 
-             -->
-
+            
           <fieldset>
             <div class="row">
               <div class="col-md-6">
