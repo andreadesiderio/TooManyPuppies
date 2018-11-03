@@ -346,7 +346,7 @@ googleAnalytics = ""
       [[params.contact.form.hidden]]
       # Special values for name such as "page" and "site" will be autofilled
         name = "name"
-        name = "email"
+      
 
   # Footer section
   [params.footer]
