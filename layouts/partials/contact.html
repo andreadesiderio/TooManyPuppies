@@ -21,7 +21,7 @@
         <form
           method="POST"
           name="sentMessage"
-          id="contactForm" data-netlify= "true"
+          id="contactForm" data-netlify=true
              netlify
              action="{{- $contact.postURL | default (printf `//formspree.io/%s` (or $contact.email .Site.Params.email)) -}}">
             
