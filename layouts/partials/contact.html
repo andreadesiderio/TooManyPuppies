@@ -23,10 +23,10 @@
           name="sentMessage"
           id="contactForm" data-netlify= "true"
           {{- if $contact.netlify -}}
-             netlify
-          {{- else -}}
+             netlify>
+          <!-- {{- else -}}
              action="{{- $contact.postURL | default (printf `//formspree.io/%s` (or $contact.email .Site.Params.email)) -}}"
-          {{- end -}}>
+          {{- end -}} --> 
 
           <fieldset>
             <div class="row">
