@@ -343,9 +343,9 @@ googleAnalytics = ""
         name = "sentMessage"
         value = "submit"
       #
-      [[params.contact.form.hidden]]
+     #[[params.contact.form.hidden]]
       # Special values for name such as "page" and "site" will be autofilled
-        name = "name"
+      #  name = "name"
       
 
   # Footer section
