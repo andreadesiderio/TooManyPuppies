@@ -343,10 +343,20 @@ googleAnalytics = ""
        name = "sentMessage"
        value = "contact"
       #
-     #[[params.contact.form.hidden]]
+     [[params.contact.form.hidden]]
       # Special values for name such as "page" and "site" will be autofilled
-      #  name = "name"
+        name = "name"
       
+     [[params.contact.form.hidden]]
+        name = "email"  
+
+     [[params.contact.form.hidden]]
+        name = "phone"
+
+     [[params.contact.form.hidden]]
+        name = "message"  
+
+            
 
   # Footer section
   [params.footer]
