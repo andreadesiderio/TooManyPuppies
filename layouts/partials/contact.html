@@ -82,7 +82,7 @@
                     Message could not be send. Please contact us at {{ (or $contact.email .Site.Params.email) }} instead.
                   {{ end }}
                 </div><br />
-                {{ with $contact.captcha }}
+                <!-- {{ with $contact.captcha }}
                   <div class="g-recaptcha-container">
                       <div class="g-recaptcha"></div>
                     <span class="g-recaptcha-filler"></span>
@@ -98,7 +98,7 @@
                     </button>
                     <span class="filler"></span>
                   </div>
-                {{ else }}
+                {{ else }} -->
                   <button type="submit" value="Submit" class="btn btn-xl">
                     {{ print $contact.buttonText }}
                   </button>
