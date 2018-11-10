@@ -289,10 +289,13 @@ googleAnalytics = ""
   # Contact section
   [params.contact]
     enable = true
-    title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
-    buttonText = "Send message"
-    netlify = true
+    buttonSend = "Send message"
+    buttonClear = "Clear"
+
+    # title = "Contact us"
+    # subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    # buttonText = "Send message"
+    # netlify = true
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -312,7 +315,7 @@ googleAnalytics = ""
     # add some custom JS script to finish the implementation.
     # postURL = "https://distracted-ptolemy-3a7ded.netlify.com"
 
-    email = "andreadesideriopro@gmail.com"
+    formEmail = "andreadesideriopro@gmail.com"
 
     # Success and error message overwrite for async contact form
     #thanks = "Thank you for awesomely contacting us."
@@ -322,21 +325,21 @@ googleAnalytics = ""
    #  sitekey = "6LfIdngUAAAAAKiBQgu4LtdPOvf10PoTaPsJUF_u"
 
     # 'warning' defines error messages for invalid inputs
-    [params.contact.form.name]
-      text = "Your Name *"
-      warning = "Please enter your name."
+    # [params.contact.form.name]
+    #   text = "Your Name *"
+    #   warning = "Please enter your name."
 
-    [params.contact.form.email]
-      text = "Your Email *"
-      warning = "Please enter your email address."
+    # [params.contact.form.email]
+    #   text = "Your Email *"
+    #   warning = "Please enter your email address."
 
-    [params.contact.form.phone]
-      text = "Your Phone *"
-      warning = "Please enter your phone number."
+    # [params.contact.form.phone]
+    #   text = "Your Phone *"
+    #   warning = "Please enter your phone number."
 
-    [params.contact.form.message]
-      text = "Your Message *"
-      warning = "Please enter a message."
+    # [params.contact.form.message]
+    #   text = "Your Message *"
+    #   warning = "Please enter a message."
 
       # Add optional form fields to identify contact forms
       # [[params.contact.form.hidden]]
