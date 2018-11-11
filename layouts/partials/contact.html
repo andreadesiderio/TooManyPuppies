@@ -18,7 +18,7 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <form
+        <!-- <form
           method="POST"
           name="sentMessage"
           id="contactForm
@@ -26,8 +26,8 @@
             " netlify
           {{- else -}}
             " action="{{- $contact.postURL | default (printf "//formspree.io/%s" (or $contact.email .Site.Params.email)) -}}"
-          {{- end -}}>
-
+          {{- end -}}> -->
+          <form method="post" name="sentMessage" netlify id="contactForm">
           <fieldset>
             <div class="row">
               <div class="col-md-6">
