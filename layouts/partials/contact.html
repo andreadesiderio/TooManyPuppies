@@ -9,8 +9,7 @@
         {{ with $contact.title }}
         <h2 class="section-heading">{{ . | markdownify }}</h2>
         {{ end }}
-
-        {{ with $contact.subtitle }}
+       {{ with $contact.subtitle }}
         <h3 class="section-subheading text-muted">{{ . | markdownify }}</h3>
         {{ end }}
 
