@@ -106,7 +106,7 @@
                 </button>
               </div>
             </div>
-            {{ range $contact.form.hidden }}
+            <!-- {{ range $contact.form.hidden }}
               {{ if eq .name "site" }}
                 <input type="hidden" name="{{ .name }}" value="{{ $.Permalink }}"/>
               {{ else if eq .name "page" }}
@@ -114,7 +114,7 @@
               {{ else }}
                 <input type="hidden" name="{{ .name }}" value="{{ .value }}"/>
               {{ end }}
-            {{ end }}
+            {{ end }} -->
           </fieldset>
         </form>
       </div>
