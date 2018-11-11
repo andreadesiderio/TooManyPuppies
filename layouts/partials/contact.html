@@ -29,8 +29,8 @@
         <form method="post"
           name="sentMessage"
           id="contactForm"
-           netlify></form>
-             <!-- action="https://formspree.io/{{ .Site.Params.Contact.email }}" -->
+           netlify
+              action="https://formspree.io/{{ .Site.Params.Contact.email }}">
           <fieldset>
             <div class="row">
               <div class="col-md-6">
@@ -110,7 +110,7 @@
                 </button>
               </div>
             </div>
-            <!-- {{ range $contact.form.hidden }}
+            {{ range $contact.form.hidden }}
               {{ if eq .name "site" }}
                 <input type="hidden" name="{{ .name }}" value="{{ $.Permalink }}"/>
               {{ else if eq .name "page" }}
@@ -118,7 +118,7 @@
               {{ else }}
                 <input type="hidden" name="{{ .name }}" value="{{ .value }}"/>
               {{ end }}
-            {{ end }} -->
+            {{ end }}
           </fieldset>
         </form>
       </div>
